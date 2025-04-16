@@ -16,8 +16,18 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: 'Lotissime - UX Prototyping Tool', // Updated title
-  description: 'Outil de prototypage rapide pour interfaces web interactives avec DaisyUI et A/B Testing.', // Updated description
+  title: 'Tr-avel, le tout-terrain électrique', // Updated title
+  description: 'Découvrez le tout-terrain électrique Tr-avel, une alternative écologique aux quads thermiques traditionnels.', // Updated description
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true
+    }
+  }
 };
 
 export default function RootLayout({

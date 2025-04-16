@@ -104,7 +104,7 @@ export const Header = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" />
               </svg>
             </label>
-            <ul tabIndex={0} className="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow">
+            <ul tabIndex={0} className="menu dropdown-content menu-sm z-[1] mt-3 fixed top-[4rem] left-0 w-full h-[calc(100vh-4rem)] rounded-none bg-base-100 p-4 shadow">
               <li><Link href="/products/2-roues">2 roues</Link></li>
               <li>
                 <span className="flex items-center gap-1">
