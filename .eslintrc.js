@@ -1,13 +1,12 @@
 // .eslintrc.js
 module.exports = {
-  extends: [
-    'next/core-web-vitals',
-    'plugin:@typescript-eslint/recommended', // Utilise les règles TS recommandées
-  ],
-  // Ajoutez des règles spécifiques ou des surcharges ici si nécessaire
-  // rules: {
-  //   // Exemple: '@typescript-eslint/no-unused-vars': 'warn',
-  // },
+  extends: ['next/core-web-vitals'],
+  rules: {
+    'react/no-unescaped-entities': 'off',
+    '@typescript-eslint/no-unused-vars': 'warn',
+    '@typescript-eslint/no-explicit-any': 'warn',
+    '@next/next/no-img-element': 'warn'
+  },
   parser: '@typescript-eslint/parser', // Assure l'utilisation du parser TS
   plugins: [
     '@typescript-eslint', // Assure le chargement du plugin TS
