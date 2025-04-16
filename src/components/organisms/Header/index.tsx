@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -13,6 +13,7 @@ const navLinks = [
 
 export const Header = () => {
   const pathname = usePathname();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const isActive = (link: typeof navLinks[0]): boolean => {
     if (link.exact) return pathname === link.href;
@@ -63,17 +64,8 @@ export const Header = () => {
           </ul>
         </div>
 
-        {/* Actions (Search, Cart, Account) */}
+        {/* Actions */}
         <div className="flex-none gap-2">
-          {/* Search */}
-          <div className="form-control hidden lg:flex">
-            <input
-              type="text"
-              placeholder="Rechercher"
-              className="input input-bordered w-24 md:w-auto"
-            />
-          </div>
-
           {/* Cart */}
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle">
@@ -86,47 +78,45 @@ export const Header = () => {
             </label>
           </div>
 
-          {/* Account */}
-          <div className="dropdown dropdown-end">
-            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-              <div className="w-10 rounded-full">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-              </div>
-            </label>
-          </div>
-
           {/* Menu mobile */}
-          <div className="dropdown dropdown-end lg:hidden">
-            <label tabIndex={0} className="btn btn-ghost btn-circle">
+          <div className="lg:hidden">
+            <button 
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="btn btn-ghost btn-circle"
+            >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" />
               </svg>
-            </label>
-            <ul tabIndex={0} className="menu dropdown-content menu-sm z-[1] mt-3 fixed top-[4rem] left-0 w-full h-[calc(100vh-4rem)] rounded-none bg-base-100 p-4 shadow">
-              <li><Link href="/products/2-roues">2 roues</Link></li>
-              <li>
-                <span className="flex items-center gap-1">
-                  3 roues
-                  <span className="text-xs font-light italic text-base-content/70">bientôt</span>
-                </span>
-              </li>
-              <li>
-                <span className="flex items-center gap-1">
-                  4 roues
-                  <span className="text-xs font-light italic text-base-content/70">bientôt</span>
-                </span>
-              </li>
-              <li><Link href="/products/accessories">Accessoires</Link></li>
-              <li className="mt-2">
-                <input
-                  type="text"
-                  placeholder="Rechercher"
-                  className="input input-bordered w-full"
-                />
-              </li>
-            </ul>
+            </button>
+            {isMobileMenuOpen && (
+              <div className="fixed inset-0 top-[4rem] z-50 bg-base-100">
+                <ul className="menu p-4">
+                  <li><Link href="/products/2-roues" onClick={() => setIsMobileMenuOpen(false)}>2 roues</Link></li>
+                  <li>
+                    <span className="flex items-center gap-1">
+                      3 roues
+                      <span className="text-xs font-light italic text-base-content/70">bientôt</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span className="flex items-center gap-1">
+                      4 roues
+                      <span className="text-xs font-light italic text-base-content/70">bientôt</span>
+                    </span>
+                  </li>
+                  <li><Link href="/products/accessories" onClick={() => setIsMobileMenuOpen(false)}>Accessoires</Link></li>
+                  <li className="mt-4">
+                    <Link 
+                      href="/products/2-roues" 
+                      className="btn btn-primary w-full"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Découvrir nos véhicules
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            )}
           </div>
         </div>
       </div>
