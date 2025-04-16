@@ -1,0 +1,344 @@
+# TR-AVEL.FR - Structure et contenu du site e-commerce
+
+## Structure générale du site
+
+### Header (toutes pages)
+- Logo TR-AVEL (lien vers accueil)
+- Menu principal :
+  - 2 roues (Trottinettes/E-scoot)
+  - 3 roues (Triporteurs)
+  - 4 roues (Véhicules)
+  - Accessoires
+- Barre de recherche
+- Icône panier avec compteur d'articles
+- Bouton connexion/mon compte
+
+### Footer (toutes pages)
+- Logo + tagline "Mobilité électrique tout-terrain"
+- Liens rapides (Accueil, Produits, À propos, Blog, Contact)
+- Informations légales (CGV, Mentions légales, Politique de confidentialité)
+- Informations de contact (adresse, email, téléphone)
+- Module d'inscription newsletter
+- Icônes réseaux sociaux
+- Copyright © 2025 TR-AVEL - Tous droits réservés | Une marque AVEL HEOL
+
+## 1. Page d'accueil
+
+### Section Hero
+- Titre : "EXPLOREZ SANS LIMITES"
+- Sous-titre : "Des solutions de mobilité électrique tout-terrain rechargeables à l'énergie solaire"
+- Bouton principal : "DÉCOUVRIR NOS VÉHICULES"
+- Bouton secondaire : "PRENDRE RENDEZ-VOUS POUR UN ESSAI"
+- Image/vidéo de fond : Véhicule TR-AVEL en action dans un environnement rural
+
+### Section Introduction
+- Titre : "MOBILITÉ ÉLECTRIQUE POUR LE MONDE RURAL"
+- Texte : "TR-AVEL propose des solutions de transport électrique tout-terrain, conçues pour les professionnels et particuliers en milieu rural. Nos véhicules allient puissance, autonomie et respect de l'environnement, offrant une alternative écologique aux quads thermiques traditionnels."
+- Chiffres clés :
+  - 15+ années d'expertise dans les batteries
+  - 100% de fabrication française
+  - Jusqu'à 90 km d'autonomie
+  - Recharge solaire disponible
+
+### Section Catégories
+- Titre : "NOS SOLUTIONS DE MOBILITÉ"
+- 3 blocs avec image, titre, description courte et bouton :
+  1. **2 ROUES - TROTTINETTES ÉLECTRIQUES**
+     - "Puissance et maniabilité pour tous vos déplacements"
+     - Bouton : "DÉCOUVRIR"
+  2. **3 ROUES - TRIPORTEURS TOUT-TERRAIN**
+     - "Stabilité et capacité de charge pour vos besoins professionnels"
+     - Bouton : "DÉCOUVRIR"
+  3. **4 ROUES - VÉHICULES ÉLECTRIQUES**
+     - "Mobilité complète pour tous types de terrains"
+     - Bouton : "BIENTÔT DISPONIBLE"
+
+### Section Produits Phares
+- Titre : "NOS PRODUITS PHARES"
+- Sous-titre : "Des solutions de mobilité électrique adaptées à vos besoins"
+- Affichage en grille (2 colonnes sur desktop, 1 sur mobile)
+  1. **Trottinette Électrique Tout-Terrain TR-AVEL**
+     - Image principale
+     - Description courte
+     - Points clés (3 maximum)
+     - Prix : "À partir de 5 000€ TTC"
+     - Bouton : "DÉCOUVRIR"
+  2. **Triporteur Tout-Terrain TR-AVEL** (Prochainement)
+     - Image placeholder
+     - Description courte
+     - Mention "Bientôt disponible"
+     - Bouton : "EN SAVOIR PLUS"
+
+### Section Technologie
+- Titre : "L'EXPERTISE TR-AVEL"
+- 3 blocs avec illustrations simples :
+  1. **Batterie Haute Performance**
+     - Icône batterie
+     - "Technologie française éprouvée"
+  2. **Motorisation Puissante**
+     - Icône moteur
+     - "Bi-moteur électrique pour plus de puissance"
+  3. **Recharge Intelligente**
+     - Icône énergie
+     - "Compatible avec nos solutions solaires"
+- Bouton : "DÉCOUVRIR NOTRE TECHNOLOGIE"
+
+### Section Avantages
+- Titre : "POURQUOI CHOISIR TR-AVEL ?"
+- 4 blocs avec icône, titre et texte court :
+  1. **FABRICATION FRANÇAISE**
+     - "Nos véhicules sont conçus et assemblés en France, garantissant qualité et circuits courts."
+  2. **AUTONOMIE SUPÉRIEURE**
+     - "Une batterie haute performance pour une autonomie allant jusqu'à 90 km selon les modèles."
+  3. **RECHARGE SOLAIRE**
+     - "Compatible avec nos kits solaires AVEL HEOL pour une indépendance énergétique totale."
+  4. **ROBUSTESSE TOUT-TERRAIN**
+     - "Construits pour durer et affronter tous types de terrains, même les plus difficiles."
+
+### Section Témoignages
+- Titre : "CE QUE NOS CLIENTS DISENT"
+- 3 témoignages avec photo, nom, profession et texte :
+  1. **Jean D., exploitant agricole**
+     - "La Zosh Mountain a révolutionné mes déplacements sur l'exploitation. Autonomie impressionnante et solidité à toute épreuve."
+  2. **Marie L., gérante de gîtes ruraux**
+     - "Le triporteur permet à nos clients de découvrir les environs sans bruit ni pollution. Un investissement rentabilisé en une saison."
+  3. **Collectivité de Merdrignac**
+     - "Nos agents techniques utilisent les véhicules TR-AVEL quotidiennement. Fiabilité et économies substantielles."
+
+### Section Blog
+- Titre : "ACTUALITÉS TR-AVEL"
+- Affichage des 3 derniers articles en grille
+  - Image d'article
+  - Date
+  - Titre
+  - Extrait court (2 lignes max)
+  - Lien "Lire la suite"
+- Bouton central : "VOIR TOUS LES ARTICLES"
+
+### Section Newsletter
+- Titre : "RESTEZ INFORMÉ"
+- Texte : "Recevez nos actualités, nouveaux produits et offres exclusives directement dans votre boîte mail."
+- Champ email et bouton d'inscription
+
+## 2. Page Catégorie (exemple : 2 roues)
+
+### En-tête Catégorie
+- Titre : "TROTTINETTES ÉLECTRIQUES TOUT-TERRAIN"
+- Description : "Des solutions de mobilité à deux roues alliant puissance et autonomie pour tous vos déplacements en milieu rural."
+- Image bannière adaptée
+
+### Filtres et Tri
+- Filtres :
+  - Prix (fourchettes)
+  - Autonomie (km)
+  - Puissance (W)
+  - Poids (kg)
+  - Disponibilité
+- Options de tri :
+  - Prix croissant/décroissant
+  - Popularité
+  - Nouveautés
+  - Promotions
+
+### Liste Produits
+Pour chaque produit :
+- Image principale
+- Nom : "TR-AVEL Series One" / "TR-AVEL Series X" / "TR-AVEL Explorer"
+- Prix : "5 000 €" / "4 500 €" / "3 800 €"
+- Caractéristiques principales (puces) :
+  - Type de moteur
+  - Autonomie
+  - Type de terrain
+  - Homologation
+- Indication stock : "En stock" / "Sur commande (délai X semaines)"
+- Bouton : "VOIR LE PRODUIT"
+
+### Pagination
+- Navigation entre les pages de résultats
+- Sélecteur d'affichage (12/24/36 produits par page)
+
+## 3. Page Produit (exemple : Zosh Mountain)
+
+### Galerie et Informations Principales
+- Nom produit : "TROTTINETTE ÉLECTRIQUE TOUT-TERRAIN TR-AVEL"
+- Tagline : "La référence des trottinettes électriques tout-terrain"
+- Évaluation : Système d'étoiles (5/5) et nombre d'avis
+- Prix : "5 000 € TTC"
+- Information TVA : "TVA incluse"
+- Information livraison : "Livraison gratuite en France métropolitaine"
+- Disponibilité : "En stock" / "Délai de X semaines"
+- Délai livraison : "Expédition sous 3-5 jours ouvrés"
+- Bouton principal : "AJOUTER AU PANIER"
+- Bouton secondaire : "PRENDRE RENDEZ-VOUS POUR UN ESSAI"
+- Galerie photos :
+  - Image principale
+  - 4-6 images secondaires (différents angles, détails)
+
+### Caractéristiques Techniques
+Liste détaillée des spécifications :
+- Moteur : Bi-moteur électrique 2×750 W
+- Batterie : Française 1680 Wh (cellules M50LT LG)
+- Autonomie : 70 à 90 km selon utilisation
+- Temps de charge : Moins de 2 heures
+- Vitesse maximale : 25 km/h (bridée, conforme législation)
+- Poids : XX kg
+- Charge maximale : XXX kg
+- Dimensions : 165 cm de longueur
+- Suspension : Avant et arrière
+- Freins : À disque hydrauliques
+- Pneus : Tout-terrain XXX pouces
+- Fabrication : Française (Sarthe, 72)
+- Homologation : Route
+- Personnalisation : Options disponibles
+
+### Description Complète
+- Description détaillée du produit
+- Usages recommandés
+- Avantages par rapport aux solutions thermiques
+- Sections illustrées sur les points forts
+- Informations sur l'intégration avec les kits solaires
+- Détails sur les possibilités de personnalisation
+
+### Compatibilité Solaire
+- Titre : "RECHARGEZ AVEC L'ÉNERGIE SOLAIRE"
+- Description du système de recharge solaire
+- Compatibilité avec les kits AVEL HEOL
+- Lien vers les kits solaires compatibles
+- Calcul d'autonomie énergétique
+
+### Options et Personnalisation
+- Options disponibles (couleurs, accessoires intégrés)
+- Formulaire de demande de personnalisation
+- Exemples de personnalisations précédentes
+
+### Garantie et SAV
+- Informations sur la garantie (durée, couverture)
+- Politique de service après-vente
+- Maintenance recommandée
+- Support technique
+
+### Accessoires Recommandés
+Liste de 3-5 accessoires compatibles avec image, nom, prix et bouton d'ajout au panier :
+- Support smartphone
+- Sacoches de rangement
+- Kit d'éclairage renforcé
+- Antivol haute sécurité
+- Batterie supplémentaire
+
+### FAQ Produit
+- Titre : "QUESTIONS FRÉQUENTES"
+- Système d'accordéon simple avec 5-6 questions essentielles :
+  1. "Quelle est l'autonomie réelle ?"
+  2. "Comment recharger mon véhicule ?"
+  3. "Est-ce homologué pour la route ?"
+  4. "Quelle est la durée de garantie ?"
+  5. "Où puis-je essayer le véhicule ?"
+- Bouton : "VOIR TOUTES LES QUESTIONS"
+
+### Avis Clients
+- Système d'évaluation par étoiles
+- Avis détaillés avec date et nom du client
+- Possibilité de filtrer les avis
+- Invitation à déposer un avis pour les clients
+
+## 4. Tunnel d'achat
+
+### Page Panier
+- Titre : "VOTRE PANIER"
+- Liste des produits avec :
+  - Image miniature
+  - Nom du produit
+  - Prix unitaire
+  - Quantité (modifiable)
+  - Prix total par article
+  - Bouton suppression
+- Sous-total (hors taxes et livraison)
+- Options de livraison avec tarifs
+- Estimation des taxes
+- Total final
+- Code promo (champ + bouton d'application)
+- Boutons :
+  - "CONTINUER VOS ACHATS"
+  - "METTRE À JOUR LE PANIER"
+  - "PASSER COMMANDE"
+- Produits suggérés : "VOUS POURRIEZ AUSSI AIMER"
+
+### Page Checkout
+1. **Étape 1 : Identification**
+   - Login pour compte existant
+   - Option création compte
+   - Option commande en tant qu'invité
+   - Avantages compte client
+
+2. **Étape 2 : Informations de livraison**
+   - Formulaire adresse complète
+   - Option adresse de facturation différente
+   - Choix du mode de livraison
+   - Estimation date de livraison
+   - Instructions spéciales
+
+3. **Étape 3 : Paiement**
+   - Récapitulatif commande
+   - Options de paiement :
+     - Carte bancaire
+     - Virement bancaire
+   - Conditions générales de vente (case à cocher)
+   - Bouton finalisation : "PAYER ET COMMANDER"
+
+4. **Étape 4 : Confirmation**
+   - Message de remerciement
+   - Récapitulatif commande avec numéro
+   - Instructions pour suivi
+   - Coordonnées service client
+   - Proposition d'inscription newsletter
+
+## 5. Pages À propos et Contact
+
+### Page À propos
+- Titre : "À PROPOS DE TR-AVEL"
+- Introduction : Présentation de la marque et sa mission
+- Notre histoire :
+  - Naissance du projet
+  - Lien avec AVEL HEOL (expertise solaire)
+  - Vision et ambitions
+- Notre équipe :
+  - Présentation des membres clés
+  - Expertise et savoir-faire
+- Nos valeurs :
+  - Durabilité
+  - Innovation
+  - Fabrication française
+  - Service client
+- Nos engagements :
+  - Environnementaux
+  - Qualité
+  - Support local
+- Galerie photos (locaux, ateliers, équipe)
+- Témoignages clients et partenaires
+- Certifications et reconnaissances
+
+### Page Contact
+- Titre : "CONTACTEZ-NOUS"
+- Informations de contact :
+  - Adresse complète
+  - Téléphone
+  - Email
+  - Horaires d'ouverture
+- Formulaire de contact :
+  - Nom et prénom
+  - Email
+  - Téléphone
+  - Sujet (liste déroulante)
+  - Message
+  - Case RGPD
+  - Bouton envoi
+- Plan d'accès / Google Maps
+- Questions fréquentes
+- Prise de rendez-vous pour essai :
+  - Sélecteur de date et heure
+  - Choix du véhicule à essayer
+  - Informations personnelles
+- Support technique :
+  - FAQ dépannage
+  - Procédure SAV
+  - Demande d'assistance technique
