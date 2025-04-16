@@ -3,7 +3,6 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   output: 'export',
-  basePath: process.env.GITHUB_ACTIONS ? '/yamzoning' : '',
   images: {
     unoptimized: true,
   },
