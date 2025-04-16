@@ -19,7 +19,7 @@ export const HomePageA = ({ showToggleButton, onToggle }: HomePageAProps) => {
             <h1 className="text-5xl font-bold">EXPLOREZ SANS LIMITES</h1>
             <p className="py-6 text-xl">Des solutions de mobilité électrique tout-terrain rechargeables à l'énergie solaire</p>
             <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-              <Link href="/products" className="btn btn-primary">DÉCOUVRIR NOS VÉHICULES</Link>
+              <Link href="/products/2-roues" className="btn btn-primary">DÉCOUVRIR NOS VÉHICULES</Link>
               <Link href="/contact" className="btn btn-outline">PRENDRE RENDEZ-VOUS POUR UN ESSAI</Link>
             </div>
           </div>
