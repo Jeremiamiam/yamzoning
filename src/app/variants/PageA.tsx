@@ -67,64 +67,6 @@ export const HomePageA = ({ showToggleButton, onToggle }: HomePageAProps) => {
         </div>
       </section>
 
-      {/* Catégories Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="mb-12 text-center text-3xl font-bold">Nos solutions de mobilité</h2>
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {/* 2 roues */}
-            <Link href="/products/2-roues" className="card bg-base-200 transition-transform hover:-translate-y-2">
-              <figure className="px-4 pt-4">
-                <div className="h-48 w-full bg-base-300"></div>
-              </figure>
-              <div className="card-body">
-                <h3 className="card-title">2 roues</h3>
-                <p className="text-sm">Trottinettes électriques tout-terrain</p>
-              </div>
-            </Link>
-
-            {/* 3 roues */}
-            <div className="card bg-base-200 relative">
-              <div className="absolute right-4 top-4 z-10">
-                <div className="badge badge-primary">Bientôt disponible</div>
-              </div>
-              <figure className="px-4 pt-4">
-                <div className="h-48 w-full bg-base-300 opacity-60"></div>
-              </figure>
-              <div className="card-body opacity-60">
-                <h3 className="card-title">3 roues</h3>
-                <p className="text-sm">Tricycles électriques tout-terrain</p>
-              </div>
-            </div>
-
-            {/* 4 roues */}
-            <div className="card bg-base-200 relative">
-              <div className="absolute right-4 top-4 z-10">
-                <div className="badge badge-primary">Bientôt disponible</div>
-              </div>
-              <figure className="px-4 pt-4">
-                <div className="h-48 w-full bg-base-300 opacity-60"></div>
-              </figure>
-              <div className="card-body opacity-60">
-                <h3 className="card-title">4 roues</h3>
-                <p className="text-sm">Voiturettes électriques tout-terrain</p>
-              </div>
-            </div>
-
-            {/* Accessoires */}
-            <Link href="/products/accessoires" className="card bg-base-200 transition-transform hover:-translate-y-2">
-              <figure className="px-4 pt-4">
-                <div className="h-48 w-full bg-base-300"></div>
-              </figure>
-              <div className="card-body">
-                <h3 className="card-title">Accessoires</h3>
-                <p className="text-sm">Équipements et pièces détachées</p>
-              </div>
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Produit Phare Section */}
       <section className="bg-base-100 py-16">
         <div className="container mx-auto px-4">
@@ -162,6 +104,104 @@ export const HomePageA = ({ showToggleButton, onToggle }: HomePageAProps) => {
               <div className="space-y-4">
                 <p className="text-2xl font-bold">À partir de 5 000€ TTC</p>
                 <Link href="/products/trottinette-electrique" className="btn btn-primary">DÉCOUVRIR</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Bandeaux Pro et Agricole */}
+      <section className="py-8">
+        <div className="container mx-auto space-y-8 px-4">
+          {/* Bandeau Pro */}
+          <Link href="/pro" className="group block overflow-hidden">
+            <div className="relative rounded-xl bg-base-200 shadow transition-transform hover:-translate-y-1 hover:shadow-lg">
+              <div className="relative grid gap-4 p-8 md:grid-cols-2 md:items-center">
+                <div className="space-y-4">
+                  <h2 className="text-3xl font-bold text-base-content">Solutions professionnelles</h2>
+                  <p className="text-lg text-base-content/80">Découvrez nos offres pour les entreprises et collectivités. Flottes personnalisables et solutions sur mesure.</p>
+                  <div className="inline-flex items-center gap-2 text-primary font-semibold">
+                    En savoir plus
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
+                <div className="relative h-48 md:h-64">
+                  {/* Placeholder pour l'image - à remplacer */}
+                  <div className="absolute inset-0 bg-base-300/20 backdrop-blur rounded-xl"></div>
+                </div>
+              </div>
+            </div>
+          </Link>
+
+          {/* Bandeau Mobilité rurale (alterné) */}
+          <Link href="/agricole" className="group block overflow-hidden">
+            <div className="relative rounded-xl bg-base-200 shadow transition-transform hover:-translate-y-1 hover:shadow-lg">
+              <div className="relative grid gap-4 p-8 md:grid-cols-2 md:items-center">
+                {/* Image à gauche sur desktop */}
+                <div className="relative order-1 md:order-none h-48 md:h-64">
+                  {/* Placeholder pour l'image - à remplacer */}
+                  <div className="absolute inset-0 bg-base-300/20 backdrop-blur rounded-xl"></div>
+                </div>
+                {/* Texte à droite sur desktop */}
+                <div className="space-y-4 md:pl-8 md:order-2">
+                  <h2 className="text-3xl font-bold text-base-content">Mobilité rurale</h2>
+                  <p className="text-lg text-base-content/80">La mobilité adaptée au monde rural. Déplacez-vous efficacement sur votre exploitation ou en pleine nature.</p>
+                  <div className="inline-flex items-center gap-2 text-primary font-semibold">
+                    En savoir plus
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Link>
+        </div>
+      </section>
+
+      {/* Catégories Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="mb-12 text-center text-3xl font-bold">Nos solutions de mobilité</h2>
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {/* 2 roues */}
+            <Link href="/products/2-roues" className="card bg-base-200 transition-transform hover:-translate-y-2">
+              <figure className="px-4 pt-4">
+                <div className="h-48 w-full bg-base-300"></div>
+              </figure>
+              <div className="card-body">
+                <h3 className="card-title">2 roues</h3>
+                <p className="text-sm">Trottinette électrique tout-terrain professionnelle</p>
+              </div>
+            </Link>
+
+            {/* 3 roues */}
+            <div className="card bg-base-200 relative">
+              <div className="absolute right-4 top-4 z-10">
+                <div className="badge badge-primary">Bientôt disponible</div>
+              </div>
+              <figure className="px-4 pt-4">
+                <div className="h-48 w-full bg-base-300 opacity-60"></div>
+              </figure>
+              <div className="card-body opacity-60">
+                <h3 className="card-title">3 roues</h3>
+                <p className="text-sm">Tricycles électriques tout-terrain</p>
+              </div>
+            </div>
+
+            {/* 4 roues */}
+            <div className="card bg-base-200 relative">
+              <div className="absolute right-4 top-4 z-10">
+                <div className="badge badge-primary">Bientôt disponible</div>
+              </div>
+              <figure className="px-4 pt-4">
+                <div className="h-48 w-full bg-base-300 opacity-60"></div>
+              </figure>
+              <div className="card-body opacity-60">
+                <h3 className="card-title">4 roues</h3>
+                <p className="text-sm">Voiturettes électriques tout-terrain</p>
               </div>
             </div>
           </div>
@@ -266,24 +306,6 @@ export const HomePageA = ({ showToggleButton, onToggle }: HomePageAProps) => {
                   </div>
                 </div>
                 <p className="mt-4">Nos agents techniques utilisent les véhicules TR-AVEL quotidiennement. Fiabilité et économies substantielles.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Newsletter Section */}
-      <section className="bg-base-200 py-16">
-        <div className="container mx-auto px-4">
-          <div className="card bg-base-100 shadow-xl">
-            <div className="card-body items-center text-center">
-              <h2 className="card-title text-2xl">RESTEZ INFORMÉ</h2>
-              <p>Recevez nos actualités, nouveaux produits et offres exclusives directement dans votre boîte mail.</p>
-              <div className="form-control w-full max-w-md">
-                <div className="input-group">
-                  <input type="text" placeholder="Votre email" className="input input-bordered flex-1" />
-                  <button className="btn btn-primary">S'inscrire</button>
-                </div>
               </div>
             </div>
           </div>

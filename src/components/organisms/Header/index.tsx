@@ -59,7 +59,10 @@ export const Header = () => {
               </span>
             </li>
             <li>
-              <Link href="/products/accessories">Accessoires</Link>
+              <Link href="/pro">Pro / Collectivités</Link>
+            </li>
+            <li>
+              <Link href="/agricole">Mobilité rurale</Link>
             </li>
           </ul>
         </div>
@@ -104,7 +107,8 @@ export const Header = () => {
                       <span className="text-xs font-light italic text-base-content/70">bientôt</span>
                     </span>
                   </li>
-                  <li><Link href="/products/accessories" onClick={() => setIsMobileMenuOpen(false)}>Accessoires</Link></li>
+                  <li><Link href="/pro" onClick={() => setIsMobileMenuOpen(false)}>Pro / Collectivités</Link></li>
+                  <li><Link href="/agricole" onClick={() => setIsMobileMenuOpen(false)}>Mobilité rurale</Link></li>
                   <li className="mt-4">
                     <Link 
                       href="/products/2-roues" 
